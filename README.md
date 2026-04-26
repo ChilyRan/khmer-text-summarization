@@ -21,6 +21,7 @@ This project fine-tunes 3 models on 2 different Khmer datasets and evaluates the
 
 ## 📂 Project Structure
 ---
+
 khmer-summarization-llm/
 ├── data/                          # Dataset (ignored in Git)
 ├── src/
@@ -32,7 +33,7 @@ khmer-summarization-llm/
 │   │   ├── train_qwen_raw.py
 │   │   └── train_qwen_synthetic.py
 │   ├── inference/                 # Inference scripts
-|   |   |__ run_eval_non_fine_lr_sum.py
+│   │   ├── run_eval_non_fine_lr_sum.py
 │   │   ├── raw/
 │   │   │   ├── run_inference_test_set.py
 │   │   │   ├── run_inference_non_fine_tune.py
@@ -42,7 +43,7 @@ khmer-summarization-llm/
 │   │       ├── run_inference_non_fine_tune.py
 │   │       └── run_inference_lr_sum.py
 │   ├── evaluation/                # Evaluation scripts
-|   |   |__run_inference_non_fine_lr_sum.py
+│   │   ├── run_inference_non_fine_lr_sum.py
 │   │   ├── raw/
 │   │   │   ├── run_eval_fine_tune.py
 │   │   │   ├── run_eval_non_fine_tune.py
