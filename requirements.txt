@@ -1,0 +1,8 @@
+unsloth
+torch
+transformers
+bitsandbytes
+xformers
+trl
+peft
+sentencepiece
