@@ -20,7 +20,8 @@ This project fine-tunes 3 models on 2 different Khmer datasets and evaluates the
 ---
 
 ## 📂 Project Structure
----
+
+```
 
 khmer-summarization-llm/
 ├── data/                          # Dataset (ignored in Git)
@@ -56,7 +57,7 @@ khmer-summarization-llm/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ---
