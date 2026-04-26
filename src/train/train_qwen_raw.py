@@ -13,7 +13,9 @@ from datasets import Dataset
 from unsloth import FastLanguageModel, is_bfloat16_supported
 from trl import SFTTrainer,SFTConfig
 from unsloth import UnslothTrainingArguments
-
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
+from src.utils import ALPACA_PROMPT
 # -------------------------------------------------------------------------
 # Environment (IMPORTANT)
 # -------------------------------------------------------------------------
@@ -111,15 +113,8 @@ def main():
     val_dataset = Dataset.from_pandas(val_df)
 
 
-    alpaca_prompt = """ខាងក្រោមនេះគឺជាសេចក្តីណែនាំអំពីកិច្ចការមួយ។ សូមផ្តល់ចម្លើយឱ្យបានត្រឹមត្រូវ ពេញលេញ និងងាយយល់។
 
-### Instruction:
-សង្ខេបអត្ថបទខាងក្រោម ឱ្យខ្លី និងមានន័យគ្រប់គ្រាន់
-### Input:
-{}
-### Response:"""
-
-    fn_kwargs = {"tokenizer": tokenizer, "alpaca_prompt": alpaca_prompt}
+    fn_kwargs = {"tokenizer": tokenizer, "alpaca_prompt": ALPACA_PROMPT}
     dataset = dataset.map(lambda x: formatting_prompts_func(x, **fn_kwargs),
         batched=True,
         remove_columns=["title", "content"],

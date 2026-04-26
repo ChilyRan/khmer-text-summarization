@@ -8,7 +8,7 @@ EVAL_FILES = [
     {"name": "Qwen", "file": "outputs/synthetic_non_fine_tune_prediction_qwen.jsonl"},
     {"name": "Gemma", "file": "outputs/synthetic_non_fine_tune_prediction_gemma.jsonl"}
 ]
-REFERENCE_FILE = "synthetic_dataset/2000_test_cleaned.jsonl"
+REFERENCE_FILE = "../../data/synthetic/2000_test_cleaned.jsonl"
 
 # Khmer tokenizer
 def custom_tokenizer(texts):

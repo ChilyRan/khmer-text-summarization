@@ -8,7 +8,7 @@ EVAL_FILES = [
     {"name": "Qwen", "file": "outputs/prediction_qwen2.jsonl"},
     {"name": "Gemma", "file": "outputs/prediction_gemma.jsonl"}
 ]
-REFERENCE_FILE = "datasets/test_10percent_cleaned.jsonl"
+REFERENCE_FILE = "../../data/raw/test_20percent_cleaned.jsonl"
 
 def custom_tokenizer(text):
     return Tokenizer().tokenize(text)

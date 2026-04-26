@@ -6,6 +6,10 @@ import torch
 
 torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../.."))
+from src.utils import ALPACA_PROMPT
 
 # --- CONFIGURATION: list of models ---
 MODELS_TO_RUN = [
@@ -28,14 +32,6 @@ MODELS_TO_RUN = [
 
 DATASET_PATH = "PrahokBartDataset/khm_test.jsonl"
 
-ALPACA_PROMPT = """ខាងក្រោមនេះគឺជាសេចក្តីណែនាំអំពីកិច្ចការមួយ។ សូមផ្តល់ចម្លើយឱ្យបានត្រឹមត្រូវ ពេញលេញ និងងាយយល់។  
-
-### Instruction:
-ចូលសង្ខេប អត្ថបទខាងក្រោមនេះ
-### Input:
-{}
-### Response:
-"""
 
 # --- Load dataset once ---
 df_test = pd.read_json(DATASET_PATH, lines=True)
