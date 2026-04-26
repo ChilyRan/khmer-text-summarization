@@ -107,6 +107,10 @@ python src/inference/raw/run_inference_non_fine_tune.py
 
 # Synthetic
 python src/inference/synthetic/run_inference_non_fine_tune.py
+
+# LR-Sum
+python src/inference/run_inference_non_fine_lr_sum.py
+
 ```
 
 ---
@@ -129,6 +133,10 @@ python src/evaluation/raw/run_eval_non_fine_tune.py
 
 # Synthetic
 python src/evaluation/synthetic/run_eval_non_fine_tune.py
+
+# LR-Sum
+python src/inference/run_eval_non_fine_lr_sum.py
+
 ```
 
 ---
