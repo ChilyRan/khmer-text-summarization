@@ -4,11 +4,11 @@ from khmer_segmenter import Tokenizer
 
 # --- CONFIGURATION ---
 EVAL_FILES = [
-    {"name": "Llama", "file": "outputs/synthetic_non_fine_tune_prediction_llama.jsonl"},
-    {"name": "Qwen", "file": "outputs/synthetic_non_fine_tune_prediction_qwen.jsonl"},
-    {"name": "Gemma", "file": "outputs/synthetic_non_fine_tune_prediction_gemma.jsonl"}
+    {"name": "Llama", "file": "outputs/synthetic_non_fine_tune_prahok_llama.jsonl"},
+    {"name": "Qwen", "file": "outputs/synthetic_non_fine_tune_prahok_qwen.jsonl"},
+    {"name": "Gemma", "file": "outputs/synthetic_non_fine_tune_prahok_gemma.jsonl"}
 ]
-REFERENCE_FILE = "synthetic_dataset/2000_test_cleaned.jsonl"
+REFERENCE_FILE = "PrahokBartDataset/khm_test.jsonl"
 
 # Khmer tokenizer
 def custom_tokenizer(texts):

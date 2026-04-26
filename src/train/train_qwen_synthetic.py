@@ -1,3 +1,10 @@
+# ============================================================
+# Khmer Text Summarization - Qwen 2.5 7B (Synthetic Dataset)
+# Fine-tuning with QLoRA using Unsloth
+# Inspired by Unsloth's fine-tuning notebooks:
+# https://github.com/unslothai/unsloth
+# ============================================================
+
 import os
 import torch
 import pandas as pd

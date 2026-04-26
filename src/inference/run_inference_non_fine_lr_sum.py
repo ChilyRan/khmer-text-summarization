@@ -11,18 +11,18 @@ torch.cuda.manual_seed_all(42)
 MODELS_TO_RUN = [
     {
         "name": "llama",
-        "model_name": "./outputs_Llama-3.2-3B-Instruct-bnb-4bit/checkpoint-215",
-        "output": "outputs/synthetic_fine_tune_prahok_llama.jsonl"
+        "model_name": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+        "output": "outputs/synthetic_non_fine_tune_prahok_llama.jsonl"
     },
     {
         "name": "qwen",
-        "model_name": "./outputs_Qwen2.5-7B-Instruct-bnb-4bit/checkpoint-215",
-        "output": "outputs/synthetic_fine_tune_prahok_qwen.jsonl"
+        "model_name": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+        "output": "outputs/synthetic_non_fine_tune_prahok_qwen.jsonl"
     },
     {
         "name": "gemma",
-        "model_name": "./outputs_gemma-2b-bnb-4bit/checkpoint-86",
-        "output": "outputs/synthetic_fine_tune_prahok_gemma.jsonl"
+        "model_name": "unsloth/gemma-2b-bnb-4bit",
+        "output": "outputs/synthetic_non_fine_tune_prahok_gemma.jsonl"
     }
 ]
 
