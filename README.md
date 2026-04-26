@@ -58,15 +58,14 @@ khmer-summarization-llm/
 ├── requirements.txt
 └── README.md
 ```
----
 
 ---
 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/ChilyRan/khmer-summarization-llm.git
-cd khmer-summarization-llm
+git clone https://github.com/ChilyRan/khmer-text-summarization.git
+cd khmer-text-summarization
 pip install -r requirements.txt
 ```
 
