@@ -15,7 +15,7 @@ This project fine-tunes 3 models on 2 different Khmer datasets and evaluates the
 | Dataset | Description |
 |---------|-------------|
 | Raw (Title-based) | Real Khmer news articles |
-| Synthetic | 2000 synthetic Khmer samples |
+| Synthetic | 10k synthetic Khmer samples |
 
 ---
 
